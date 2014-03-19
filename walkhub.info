@@ -1,0 +1,26 @@
+; $Id $
+name = Walkhub
+description = Walkhub Distro
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = shortcut
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+
+; Contrib
+dependencies[] = walkthrough
+
+
