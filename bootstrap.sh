@@ -9,7 +9,7 @@ TMP_DIR="/tmp/walkhub"
 
 rm -rf walkhub
 rm -rf ${TMP_DIR}
-echo "[INFO] Clonning repo to ${TMP_DIR} folder."
+echo "[INFO] Cloning repo to ${TMP_DIR} folder."
 git clone --recursive --branch walkhub https://github.com/marcelovani/xtemp.git ${TMP_DIR}
 
 if [ -d ${TMP_DIR} ]; then
