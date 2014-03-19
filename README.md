@@ -12,7 +12,7 @@ Installation
   $ cd /Users/Shared
 
   Copy and paste this into your shell to install everything:
-  $ curl -L -s http://goo.gl/Db07EI | bash
+  $ curl -L -s http://goo.gl/5w30CH | bash
 
   Go inside the distro folder
   $ cd walkhub
