@@ -14,7 +14,7 @@ git clone --recursive --branch walkhub https://github.com/marcelovani/xtemp.git 
 if [ -d ${TMP_DIR} ]; then
   echo "[Info] Bootstrap has finished installation."
   cd ${TMP_DIR}
-  sh scripts/install.sh "${INSTALL_DIR}/walkhub"
+  sh scripts/build.sh "${INSTALL_DIR}/walkhub"
 else
   echo "[Error] Something went wrong when cloning the repo"
 fi
