@@ -28,6 +28,18 @@ libraries[resources][download][type] = "git"
 libraries[resources][download][url] = "https://github.com/Pronovix/WalkHub-resources.git"
 libraries[resources][subdir] = walkhub
 
+libraries[bigscreen][type] = "module"
+libraries[bigscreen][download][type] = "git"
+libraries[bigscreen][download][url] = "https://github.com/bdougherty/BigScreen.git"
+libraries[bigscreen][download][tag] = "v2.0.4"
+libraries[bigscreen][subdir] = bigscreen
+
+libraries[supersized][type] = "module"
+libraries[supersized][download][type] = "git"
+libraries[supersized][download][url] = "https://github.com/buildinternet/supersized.git"
+libraries[supersized][download][tag] = "v3.2"
+libraries[supersized][subdir] = bigscreen
+
 ; Themes
 ; ------
 
