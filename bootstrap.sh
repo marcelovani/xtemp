@@ -8,11 +8,11 @@ INSTALL_DIR="${BASH_SOURCE[0]}"
 TMP_DIR="/tmp/walkhub"
 
 rm -rf ${TMP_DIR}
+echo "[INFO] Clonning repo to ${TMP_DIR} folder."
 git clone --recursive --branch walkhub https://github.com/marcelovani/xtemp.git ${TMP_DIR}
 
 if [ -d ${TMP_DIR} ]; then
-  echo "[Info] Bootstrap has finished installation."
-  echo
+  echo "[INFO] Bootstrap has finished installation."
   cd ${TMP_DIR}
   #echo To install Distro run 
   #echo $ cd mvdistro

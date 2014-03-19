@@ -56,7 +56,7 @@ projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "1.3"
 
 projects[jquery_update][subdir] = "contrib"
-projects[jquery_update][version] = "2.3+6-dev"
+projects[jquery_update][version] = "2.3-alpha1"
 
 projects[legal][subdir] = "contrib"
 projects[legal][version] = "1.4"
