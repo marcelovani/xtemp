@@ -8,15 +8,18 @@ Drush
 
 Installation
 
-  Go to the folder where you want to install the Distro i.e.
-  $ cd /Users/Shared
+  - Go to the folder where you want to install the Distro i.e.
+    $ cd /Users/Shared
 
-  Copy and paste this into your shell to install everything:
-  $ curl -L -s http://goo.gl/5w30CH | bash
-
-  Go inside the distro folder
-  $ cd walkhub
+  - Copy and paste this into your shell to install everything:
+    $ curl -L -s http://goo.gl/5w30CH | bash
   
-  Run install
-  $ ./install.sh /path/to/drupal/root
+    What it will do:
+    - Clone Drupal from drupal.org
+    - Clone WalkHub repo
+    - Build a Distro that contains a profile called walkthrough
+    - Run build script that will download Drush if necessary, build the site.
+    
+  - Now you can install your distro site using your browser. If you want to use drush, this is syntax:
+    /usr/local/drush/drush si -y walkhub --db-url="mysql://root@localhost/walkhub" --site-name="WalkHub" --account-name=admin --account-pass=password --sites-subdir=default
 
