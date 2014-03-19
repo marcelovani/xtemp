@@ -27,7 +27,8 @@ function f_install_build() {
 }
 
 function f_install_site() {
-  echo "[Info] Everything ready. Now install your distro site. You can install the site using drush using this syntax:"
+  echo
+  echo "[Info] Everything ready. Now you can install your distro site. If you want to use drush, this is syntax:"
   echo "/usr/local/drush/drush si -y walkhub --db-url=\"mysql://root@localhost/walkhub\" --site-name=\"WalkHub\" --account-name=admin --account-pass=password --sites-subdir=default"
   echo
 }
