@@ -8,11 +8,11 @@ Drush
 
 Installation
 
-  Go to a temporary folder
-  $ cd /tmp
+  Go to the folder where you want to install the Distro i.e.
+  $ cd /Users/Shared
 
   Copy and paste this into your shell to install everything:
-  $ curl -L -s http://goo.gl/kHtmHH | bash
+  $ curl -L -s http://goo.gl/Db07EI | bash
 
   Go inside the distro folder
   $ cd walkhub

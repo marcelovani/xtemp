@@ -4,18 +4,20 @@ set +x
 echo
 echo "[Info] Bootstrap is cloning the repo"
 
-TMP_FOLDER="/tmp/walkhub"
+INSTALL_DIR="${BASH_SOURCE[0]}"
+TMP_DIR="/tmp/walkhub"
 
-rm -rf ${TMP_FOLDER}
-git clone --recursive --branch walkhub https://github.com/marcelovani/xtemp.git ${TMP_FOLDER}
+rm -rf ${TMP_DIR}
+git clone --recursive --branch walkhub https://github.com/marcelovani/xtemp.git ${TMP_DIR}
 
-if [ -d ${TMP_FOLDER} ]; then
+if [ -d ${TMP_DIR} ]; then
   echo "[Info] Bootstrap has finished installation."
   echo
-  cp -a ${TMP_FOLDER} .
-  echo To install Distro run 
-  echo $ cd mvdistro
-  echo $ ./install.sh
+  cd ${TMP_DIR}
+  #echo To install Distro run 
+  #echo $ cd mvdistro
+  #echo $ ./install.sh
+  sh install.sh "${INSTALL_DIR}/walkhub"
 else
   echo "[Error] Something went wrong when cloning the repo"
 fi
