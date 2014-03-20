@@ -14,7 +14,7 @@ function f_install_drush() {
          sudo /usr/local/drush/drush --version
          ;;
        *)
-         echo "[Info] You need to build the site using Drush i.e. /usr/local/drush/drush make --prepare-install build-walkhub.make ${INSTALL_DIR}"
+         echo "[Info] You need to build the site using Drush i.e. drush make --prepare-install /tmp/walkhub/build-walkhub.make ${INSTALL_DIR}"
          exit
          ;;
      esac
@@ -23,13 +23,16 @@ function f_install_drush() {
 
 function f_install_build() {
   echo "[Info] Build site"
-  /usr/local/drush/drush make --prepare-install build-walkhub.make ${INSTALL_DIR}
+  /usr/local/drush/drush make --prepare-install /tmp/walkhub/build-walkhub.make ${INSTALL_DIR}
 }
 
 function f_install_site() {
   echo
-  echo "[Info] Everything ready. Now you can install your distro site. If you want to use drush, this is syntax:"
-  echo "/usr/local/drush/drush si -y walkhub --db-url=\"mysql://root@localhost/walkhub\" --site-name=\"WalkHub\" --account-name=admin --account-pass=password --sites-subdir=default"
+  echo "[Info] Now you can install your distro site using your browser. If you want to use drush, you can use the commands below"
+  echo "drush si -y walkthrough --db-url=\"mysql://root@localhost/walkhub\" --site-name=\"WalkHub\" --account-name=admin --account-pass=password --sites-subdir=default"
+  echo Drupal login details:
+  echo user: admin
+  echo pass: password
   echo
 }
 
@@ -38,5 +41,3 @@ f_install_build
 f_install_site
 
 echo Done
-
-
