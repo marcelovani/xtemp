@@ -14,7 +14,7 @@ Installation
 
   - Copy and paste the following command into your shell terminal to install everything. This will create a folder with the name walkhub inside your chosen installation directory:
   
-    curl -L -s http://goo.gl/dXUbub | bash
+    curl -L -s http://goo.gl/AWcyA6 | bash
   
     What it will do:
 
@@ -28,4 +28,3 @@ Installation
     cd walkhub/sites/default/
 
     drush si -y walkthrough --db-url="mysql://root@localhost/walkhub" --site-name="WalkHub" --account-name=admin --account-pass=password --sites-subdir=default
-
